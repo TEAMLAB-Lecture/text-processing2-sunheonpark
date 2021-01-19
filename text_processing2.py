@@ -29,7 +29,7 @@ def to_camel_case(underscore_str):
     str_list = underscore_str.split('_')
     str_filtered_list = [string for string in str_list if string != ""]
     str_len = len(str_filtered_list)
-    if str_len > 1:
+    if str_len > 0:
         str_filtered_list[0] = str_filtered_list[0].lower()
         for i in range(1,str_len):
             str_filtered_list[i] = str_filtered_list[i].capitalize()
